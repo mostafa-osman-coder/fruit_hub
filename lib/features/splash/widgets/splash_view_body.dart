@@ -14,10 +14,14 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-         SvgPicture.asset(Assets.imagesPlant),
+         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children:[SvgPicture.asset(Assets.imagesPlant),], ),
          SvgPicture.asset(Assets.imagesLogo),
-         SvgPicture.asset(Assets.imagesSplashBottom),
+         SvgPicture.asset(Assets.imagesSplashBottom,
+         fit: BoxFit.fill,),
 
       ],
     );
