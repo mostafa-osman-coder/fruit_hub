@@ -3,11 +3,11 @@ import 'package:fruit_hub/core/hleper_functions/on_generate_route.dart';
 import 'package:fruit_hub/features/splash_view/presentation/splash_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FruitHub());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FruitHub extends StatelessWidget {
+  const FruitHub({super.key});
 
   // This widget is the root of your application.
   @override
