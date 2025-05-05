@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_hub/core/hleper_functions/on_generate_route.dart';
-import 'package:fruit_hub/features/splash_view/presentation/splash_view.dart';
+import 'package:fruit_hub/features/splash_screen/presentation/splash_view.dart';
 
 void main() {
   runApp(const FruitHub());
