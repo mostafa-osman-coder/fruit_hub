@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruit_hub/core/images_app.dart';
+import 'package:fruit_hub/core/utils/images_app.dart';
 
 
 class SplashViewBody extends StatefulWidget {
