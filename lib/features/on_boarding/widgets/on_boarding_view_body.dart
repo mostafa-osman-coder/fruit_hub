@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
 import 'package:fruit_hub/features/on_boarding/widgets/on_boarding_page_view.dart';
  // Ensure this is the correct package or file for DotsIndicator
 
@@ -20,7 +21,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
         DotsIndicator(
           dotsCount: 2,
           decorator: DotsDecorator(
-            activeColor: const Color(0xFF0C0D0D),
+            activeColor: AppColors.primaryColor,
+            // ignore: deprecated_member_use
+            color: AppColors.primaryColor.withOpacity(0.5),
+
             
             
           ),
