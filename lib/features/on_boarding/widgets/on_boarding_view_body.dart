@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/widgets/custom_button.dart';
 import 'package:fruit_hub/features/on_boarding/widgets/on_boarding_page_view.dart';
  // Ensure this is the correct package or file for DotsIndicator
 
@@ -29,6 +30,11 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
             
           ),
           
+          ),
+
+          CustomButton(
+            onPressed: () {},
+            text: 'ابدأ الان',
           ),
 
       ],
