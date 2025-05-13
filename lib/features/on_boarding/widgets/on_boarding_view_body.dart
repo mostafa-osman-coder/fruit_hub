@@ -14,6 +14,28 @@ class OnBoardingViewBody extends StatefulWidget {
 }
 
 class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
+
+  late PageController pageController;
+  var currentPage = 0;
+
+
+    @override
+  void initState() {
+    pageController = PageController();
+    pageController.addListener(() {
+      setState(() {
+        currentPage = pageController.page!.round();
+      });
+    });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(

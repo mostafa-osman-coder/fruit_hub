@@ -8,6 +8,7 @@ class OnBoardingPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
+      
 
       children:  [
         // page 1
