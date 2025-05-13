@@ -40,25 +40,33 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: OnBoardingPageView()),
+        Expanded(child: OnBoardingPageView(
+          pageController: pageController,
+        )),
       
         DotsIndicator(
           dotsCount: 2,
           decorator: DotsDecorator(
-            activeColor: AppColors.primaryColor,
+            activeColor:  AppColors.primaryColor,
             // ignore: deprecated_member_use
-            color: AppColors.primaryColor.withOpacity(0.5),
+            color: currentPage == 1 ? AppColors.primaryColor : AppColors.primaryColor.withOpacity(0.5),
   
           ),
           ),
         const SizedBox(
-          height: 23,),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
-            child: CustomButton(
-              
-              onPressed: () {},
-              text: 'ابدأ الان', 
+          height: 23,), 
+          Visibility(
+            maintainSize: true,
+            maintainAnimation: true,
+            maintainState: true,
+            visible: currentPage == 1 ? true : false,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
+              child: CustomButton(
+                
+                onPressed: () {},
+                text: 'ابدأ الان', 
+              ),
             ),
           ),
 
